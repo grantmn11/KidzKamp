@@ -1,0 +1,23 @@
+{% extends '../base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        
+            <h1 class="text-center mb-2">Add Parent</h1>
+            
+            <form action="" method="POST">
+                {% csrf_token %}
+
+                {{ form.first_name|as_crispy_field }}
+                {{ form.last_name|as_crispy_field }}
+                {{ form.phone|as_crispy_field}}
+                {{ form.email|as_crispy_field}}
+
+                <input type='submit' value='Submit' class='btn btn-primary btn-lg'/>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

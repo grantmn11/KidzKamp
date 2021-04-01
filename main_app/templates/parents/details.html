@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %} 
+<div class ='container'>
+    <h4>First Name</h4>
+    <p>{{parent.first_name}}</p>
+    <h4>Last Name</h4>
+    <p>{{parent.last_name}}</p>
+    <h4>Phone Number</h4>
+    <p>{{parent.phone}}</p>
+    <h4>Email</h4>
+    <p>{{parent.email}}</p>
+    
+</div>
+
+
+{% endblock %}
