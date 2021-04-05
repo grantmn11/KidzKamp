@@ -49,16 +49,16 @@
                     <a style='font-size: 25px;font-family: Chilanka, cursive;' class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                   </li> -->
                   <li class="nav-item">
-                    <a style='font-size: 25px;font-family: Chilanka, cursive;' class="nav-link" href="{% url 'summer'  %}">Summer</a>
+                    <a style='font-size: 18px;font-family: Chilanka, cursive;' class="nav-link" href="{% url 'summer'  %}">Summer</a>
                   </li>
                   <li class="nav-item">
-                    <a style='font-size: 25px;font-family: Chilanka, cursive;' class="nav-link" href="{% url 'afterschool' %}">AfterSchool</a>
+                    <a style='font-size: 18px;font-family: Chilanka, cursive;' class="nav-link" href="{% url 'afterschool' %}">AfterSchool</a>
                   </li>
                   <li class="nav-item">
-                    <a style='font-size: 25px;font-family: Chilanka, cursive;' class="nav-link" href="{% url 'photos' %}">Photos</a>
+                    <a style='font-size: 18px;font-family: Chilanka, cursive;' class="nav-link" href="{% url 'photos' %}">Photos</a>
                   </li>
                   <li class='nav-item'>
-                    <a style='font-size: 25px;font-family: Chilanka, cursive;' class="nav-link" href="{% url 'parent_create' %}">Join Our Email List</a>
+                    <a style='font-size: 18px;font-family: Chilanka, cursive;' class="nav-link" href="{% url 'parent_create' %}">Newsletter</a>
                   </li>
                 </ul>
                 
@@ -83,10 +83,11 @@
       <!--Grid column-->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
         <h5 style='font-size: 22px;font-family: Chilanka, cursive;' class="text-uppercase">Kidz Kamp</h5>
+        <p style='font-size: 15px;font-family: Chilanka, cursive;' >Established in 1996.
 
-        <p style='font-size: 15px;font-family: Chilanka, cursive;'>
-          Kidz Kamp prides itself on instilling kids with positive values, promoting good health, exercise, and respect for others. The high standard it holds its participants and staff to has helped make it one of the best after school and summer programs in the San Diego area!
-        </p>
+          Kidz Kamp is ingrained in the community, it has become a vital part of the neighborhood.
+          
+          Kidz Kamp prides itself on instilling kids with positive values, promoting good health, exercise, and respect for others. The high standard it holds its participants and staff to has helped make it one of the best after school and summer programs in the San Diego area.</p>
       </div>
       <!--Grid column-->
 
@@ -96,19 +97,47 @@
 
         <ul style='font-size: 15px;font-family: Chilanka, cursive;' class="list-unstyled mb-0">
           <li>
-            <a href="https://www.yelp.com/biz/doyle-park-kidz-kamp-san-diego?osq=doyle+park+kidz+kamp" class="text-dark"><i class='fa fa-yelp'>Yelp</i></a>
+            <a href="https://www.yelp.com/biz/doyle-park-kidz-kamp-san-diego?osq=doyle+park+kidz+kamp" class="text-dark"><i class='fa fa-yelp'> Yelp</i></a>
             
           </li>
           <br>
           <li>
             
             
-            <a href="https://www.youtube.com/watch?v=eTh-09JqK1k" class="text-dark"><i class='fa fa-youtube'>Youtube</i></a>
+            <a href="https://www.youtube.com/watch?v=eTh-09JqK1k" class="text-dark"><i class='fa fa-youtube'> Youtube</i></a>
             
           </li>
           <br>
           <li>
-            <a href="https://www.instagram.com/" class="text-dark"><i class='fa fa-instagram'>Instagram</i></a>
+            <a href="https://www.instagram.com/" class="text-dark"><i class='fa fa-instagram'>  Instagram</i></a>
+          </li>
+          <br>
+          <li>
+            <a href="{% url 'parent_create' %}" class="text-dark"><i class='fa fa-envelope'>  Email</i></a>
+          </li>
+          <!-- <li>
+            <a href="https://apm.activecommunities.com/sdparkandrec/Activity_Search" class="text-dark"><i class='fas fa-child'>Enroll Here</i></a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="col-lg-0 col-md-3 mb-4 mb-md-0">
+        <h5 style='font-size: 22px;font-family: Chilanka, cursive;' class="text-uppercase">Forms</h5>
+
+        <ul style='font-size: 15px;font-family: Chilanka, cursive;' class="list-unstyled mb-0">
+          <li>
+            <a href="{% static 'Spring 2021 Reg Packet.docx (2).pdf'   %}" class="text-dark"><i class='fa fa-wpforms'>  Spring Registration</i></a>
+            
+          </li>
+          <br>
+          <li>
+            
+            
+            <a href="{% static 'Parent Commitment Form Template (1).pdf' %}" class="text-dark"><i class='fa fa-wpforms'>  Parent Commitment</i></a>
+            
+          </li>
+          <br>
+          <li>
+            <a href="{% url 'parent_create' %}" class="text-dark"><i class='fa fa-envelope'>  Email</i></a>
           </li>
           <!-- <li>
             <a href="https://apm.activecommunities.com/sdparkandrec/Activity_Search" class="text-dark"><i class='fas fa-child'>Enroll Here</i></a>
@@ -116,22 +145,26 @@
         </ul>
       </div>
       <!--Grid column-->
-
+      
       <!--Grid column-->
 
         
       </div>
+      
       <!--Grid column-->
     </div>
+   
     <!--Grid row-->
   </div>
   <!-- Grid container -->
   
+    
+ 
 
   <!-- Copyright -->
   <!-- <div class="col-md-12 col-12"> -->
   <div style='font-size: 15px;font-family: Chilanka, cursive;background-color: rgba(0, 0, 0, 0.2);' class="text-center p-3">
-    © 2020 Copyright:
+    © 2021 Copyright:
     <a class="text-dark" href="#">Grant Ferreira</a>
   </div>
 <!-- </div> -->
