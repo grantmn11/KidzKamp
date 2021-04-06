@@ -27,7 +27,7 @@ SECRET_KEY = 'q%h-r2sg+9wr&g6_rgpu9fq5o3@0o!n%ccl+*mjy!-%d7=$%16'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.sdkidzkamp.com', 'sdkidzkamp.com']
 
 
 # Application definition
