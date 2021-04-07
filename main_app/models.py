@@ -13,7 +13,7 @@ class Parent(models.Model):
     
 
     def __str__(self):
-        return self.name
+        return self.first_name
     def get_absolute_url(self):
         return reverse('parent_details',kwargs={'parent_id': self.id})
 
