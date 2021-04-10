@@ -45,25 +45,3 @@ class CreateParent(CreateView):
 
 
 
-
-  
-
-
-# def add_child(request, parent_id):
-#   form = ChildForm(request.POST)
-#   if form.is_valid():
-#     new_comment = form.save(commit=False)
-#     new_comment.parent_id = parent_id
-#     # new_comment.update('content')
-#     new_comment.save()
-#   return redirect('parent_details', parent_id = parent_id)
-
-
-
-# def add_parent(request, parent_id):
-#     form = ParentForm(request.POST)
-#     if form.is_valid():
-#         new_parent = form.save(commit=False)
-#         new_parent.parent_id = parent_id
-#         new_parent.save()
-#     return redirect('parent_index', parent_id=parent_id)
