@@ -129,7 +129,7 @@ STATIC_URL = '/static/'
 import django_heroku
 django_heroku.settings(locals())
 
-if os.getcwd() == 'kidzkamp/':
+if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SECURE_SSL_REDIRECT = True
     DEBUG = False
