@@ -27,6 +27,8 @@ SECRET_KEY = os.getenv('SECRET')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+BASE_URL = 'https://www.sdkidzkamp.com'
+
 ALLOWED_HOSTS = ['www.sdkidzkamp.com', 'sdkidzkamp.com']
 
 
@@ -129,8 +131,8 @@ STATIC_URL = '/static/'
 import django_heroku
 django_heroku.settings(locals())
 
-if os.getcwd() == '/app':
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    ALLOWED_HOSTS = ['dpkidzkamp.herokuapp.com']
-    SECURE_SSL_REDIRECT = True
-    DEBUG = False
+# if os.getcwd() == '/app':
+#     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#     ALLOWED_HOSTS = ['dpkidzkamp.herokuapp.com']
+#     SECURE_SSL_REDIRECT = True
+#     DEBUG = False
