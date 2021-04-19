@@ -10,6 +10,8 @@ urlpatterns = [
     path('parent/', views.parent_index, name='parent_index'),
     path('parent/<int:parent_id>/', views.parent_details, name = 'parent_details'),
     path('parent/create', views.CreateParent.as_view(), name= 'parent_create'),
+    path('summer/create', views.CreateSummer.as_view(), name= 'summer_create'),
+    path('summer/<int:summer_id>/', views.summer_details, name= 'summer_details'),
     path('program/afterschool', views.afterschool, name='afterschool'),
     path('program/summer', views.summer, name='summer'),
    

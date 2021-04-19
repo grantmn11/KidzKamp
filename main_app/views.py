@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 
-from .models import Parent
+from .models import Parent, Summer
 from django.views.generic.edit import CreateView
 
 
@@ -33,6 +33,14 @@ def parent_details(request, parent_id):
     parent = Parent.objects.get(id=parent_id)
     return render(request, 'parents/details.html',{'parent': parent})
 
+def summer_index(request):
+    summer = Summer.objects.all()
+
+    return render(request, 'summer/index.html',{'summer': summer})
+
+def summer_details(request, summer_id):
+    summer = Summer.objects.get(id=summer_id)
+    return render(request, 'summer/details.html', {'summer': summer})
 
 # def parent_details(request, parent_id):
 #     parent = Parent.objects.get(id=parent_id)
@@ -43,5 +51,6 @@ class CreateParent(CreateView):
   fields = ['first_name', 'last_name','phone','email']
   
 
-
-
+class CreateSummer(CreateView):
+    model = Summer
+    fields = ['first_name', 'last_name', 'child_name', 'week_number', 'email', 'phone']
