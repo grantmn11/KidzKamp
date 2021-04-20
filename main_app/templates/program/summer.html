@@ -1,21 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %} 
-
-    <h1 style='font-family: Chilanka, cursive; font-weight: 900;'>Summer Kidz Kamp</h1>
-    <!-- <table>
-        <tr>
-            <th>Summer Weeks Details</th>
-        <td>Weekly Cost</td>
-        <td>$222.00</td>
-
-        </tr>
-        <tr>
-            <th>Daily Rates</th>
-        <td>Daily Cost</td>
-        <td>$51.00</td>
-    </tr>
-    </table> -->
+<a target="_blank" href="{% static 'Summer Flyer 2015.docx.pdf' %}" class="text-dark">
+    <h1 class='card-title' style='font-family: Roboto Mono, ; font-size: 38px; font-weight: 900; color: black; '>KIDZ KAMP SUMMER FLYER</h1>
+</a>
     <div style="font-weight: 400;">
     <table style='background-color: #efee4d; color: black;'  class="table">
         <thead>
@@ -46,7 +34,25 @@
             <td>Open</td>
           </tr>
           <tr>
-            <th scope="row">June 28th - July 2nd</th>
+            <th scope="row">July 6th - July 9th</th>
+            <td>$220.00</td>
+            <td>$51.00</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <th scope="row">July 12th - July 16th</th>
+            <td>$220.00</td>
+            <td>$51.00</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <th scope="row">July 19th - July 23rd</th>
+            <td>$220.00</td>
+            <td>$51.00</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <th scope="row">June 26th - July 30th</th>
             <td>$220.00</td>
             <td>$51.00</td>
             <td>Open</td>
@@ -58,31 +64,25 @@
             <td>Open</td>
           </tr>
           <tr>
-            <th scope="row">June 28th - July 2nd</th>
+            <th scope="row">August 2nd - August 6th</th>
             <td>$220.00</td>
             <td>$51.00</td>
             <td>Open</td>
           </tr>
           <tr>
-            <th scope="row">June 28th - July 2nd</th>
+            <th scope="row">August 9th - August 13th</th>
             <td>$220.00</td>
             <td>$51.00</td>
             <td>Open</td>
           </tr>
           <tr>
-            <th scope="row">June 28th - July 2nd</th>
+            <th scope="row">August 16th - August 20th</th>
             <td>$220.00</td>
             <td>$51.00</td>
             <td>Open</td>
           </tr>
           <tr>
-            <th scope="row">June 28th - July 2nd</th>
-            <td>$220.00</td>
-            <td>$51.00</td>
-            <td>Open</td>
-          </tr>
-          <tr>
-            <th scope="row">June 28th - July 2nd</th>
+            <th scope="row">August 23rd - August 27th</th>
             <td>$220.00</td>
             <td>$51.00</td>
             <td>Open</td>
@@ -90,8 +90,8 @@
         </tbody>
       </table>
       </div>
-    <a href="{% url 'summer_create'%}" class="btn btn-dark" style='font-family: Roboto Mono;'>
-      <h4>Reserve A Spot Now</h4>
+    <a href="{% url 'summer_create'%}" class="btn btn-dark" style='font-family:Roboto Mono; font-size: 20px;  padding-top: 5px;'>
+      <h4 style='font-weight: 900;'>Reserve A Spot Now</h4>
     </a>
       
 
