@@ -1,9 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %} 
-<a target="_blank" href="{% static 'Summer Flyer 2015.docx.pdf' %}" class="text-dark">
-    <h1 class='card-title' style='font-family: Chilanka, cursive; font-size: 38px; font-weight: 900; color: black; '>KIDZ KAMP SUMMER FLYER</h1>
+<div class='container d-flex justify-content-center row'>
+<a style="text-decoration: none;  " target="_blank" href="{% static 'Summer Flyer 2015.docx.pdf' %}" >
+    <h4 style='font-family: Chilanka, cursive; font-size: 38px; font-weight: 900; color: blue; '>Kidz Kamp Summer Flyer</h4> 
 </a>
+
+<ul style=' font-size: 20px; font-weight: bolder; color: black;'>
+<li> During the summer and holiday break camps, we are open from 7:30am to 5:30pm offering a full day of care. </li>
+<li>
+ Daily structured games, arts and crafts, reading and school work help and snack are all provided during these programs.(Due to COVID-19 restrictions snack will not be provided)
+</li>
+<li> Our summer program includes weekly field trips, all of which are local and in safe and controlled establishments.(Due to COVID-19 restrictions there will be no field trips)</li>
+</ul>
+</div>
     <div style="font-weight: 400;">
     <table style='background-color: #efee4d; color: black;'  class="table">
         <thead>
@@ -90,8 +100,8 @@
         </tbody>
       </table>
       </div>
-    <a href="{% url 'summer_create'%}" class="btn btn-dark" style='font-family:Roboto Mono; font-size: 20px;  padding-top: 5px;'>
-      <h4 style='font-weight: 900;'>Reserve A Spot Now</h4>
+    <a href="{% url 'summer_create'%}" class="btn btn-dark" style='font-family:Chilanka, cursive; font-size: 20px; '>
+      Reserve A Spot Now
     </a>
       
 
