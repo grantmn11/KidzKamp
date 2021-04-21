@@ -8,7 +8,7 @@ from phone_field import PhoneField
 class Parent(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
-    phone = PhoneField(blank=True, help_text='Contact Phone Number',E164_only=False)
+    phone = PhoneField(blank=True,E164_only=False)
     email = models.CharField(max_length=100)
     
 
@@ -22,7 +22,7 @@ class Summer(models.Model):
     last_name = models.CharField(max_length=100)
     child_name = models.CharField(max_length=100)
     week_number = models.IntegerField()
-    phone = PhoneField(blank=True, help_text='Contact Phone Number',E164_only=False)
+    phone = PhoneField(blank=True,E164_only=False)
     email = models.CharField(max_length=100)
 
     def __str__(self):
