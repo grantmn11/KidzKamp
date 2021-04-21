@@ -11,14 +11,14 @@
                 <div class="d-flex align-items-center flex-column">
                     <img style='width:300px; height: 300px;' src="{% static 'WebsiteNewLogo (1).png' %}" alt="">
                 
-            <form  action="" method="POST">
+            <form  style='padding-right: 2px; padding-top: 2px;' action="" method="POST">
                 {% csrf_token %}
 
                 {{ form.first_name|as_crispy_field }}
                 {{ form.last_name|as_crispy_field }}
                 {{ form.phone|as_crispy_field}}
                 {{ form.email|as_crispy_field}}
-
+                <br>
                 <input type='submit' value='Submit' class='btn btn-primary btn-lg'/>
             </form>
         </div>
