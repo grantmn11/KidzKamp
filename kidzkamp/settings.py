@@ -32,10 +32,14 @@ BASE_URL = 'https://www.sdkidzkamp.com'
 
 ALLOWED_HOSTS = ['www.sdkidzkamp.com', 'sdkidzkamp.com']
 
+GOOGLE_ANALYTICS = {
+    'google_analytics_id': 'UA-195128106-1',
+}
 
 # Application definition
 
 INSTALLED_APPS = [
+    'google_analytics',
     'phone_field',
     'bootstrap5',
     'crispy_forms',
