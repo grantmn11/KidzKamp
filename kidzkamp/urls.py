@@ -21,6 +21,6 @@ from django.urls import re_path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main_app.urls')),
-    re_path('djga/', include('google_analytics.urls')),
+    # re_path('djga/', include('google_analytics.urls')),
     
 ]
