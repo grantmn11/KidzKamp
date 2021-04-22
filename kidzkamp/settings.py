@@ -32,15 +32,15 @@ BASE_URL = 'https://www.sdkidzkamp.com'
 
 ALLOWED_HOSTS = ['www.sdkidzkamp.com', 'sdkidzkamp.com']
 
-GOOGLE_ANALYTICS = {
-    'google_analytics_id': 'UA-195128106-1',
-}
-GOOGLE_ANALYTICS_MODEL = True
+# GOOGLE_ANALYTICS = {
+#     'google_analytics_id': 'UA-195128106-1',
+# }
+# GOOGLE_ANALYTICS_MODEL = True
 
 # Application definition
 
 INSTALLED_APPS = [
-    'google_analytics',
+    # 'google_analytics',
     'phone_field',
     'bootstrap5',
     'crispy_forms',
@@ -63,9 +63,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-# SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = True
 
 ROOT_URLCONF = 'kidzkamp.urls'
 
