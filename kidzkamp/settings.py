@@ -39,7 +39,7 @@ GOOGLE_ANALYTICS = {
 # Application definition
 
 INSTALLED_APPS = [
-    'google_analytics_app',
+    'google_analytics',
     'phone_field',
     'bootstrap5',
     'crispy_forms',
