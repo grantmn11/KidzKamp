@@ -1,5 +1,5 @@
 from django.urls import path 
-from django.urls import re_path
+
 from . import views
 
 
@@ -15,7 +15,7 @@ urlpatterns = [
     path('summer/<int:summer_id>/', views.summer_details, name= 'summer_details'),
     path('program/afterschool', views.afterschool, name='afterschool'),
     path('program/summer', views.summer, name='summer'),
-    re_path('djga/', include('google_analytics.urls')),
+    
    
     
 ]
