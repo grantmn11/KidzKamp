@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['www.sdkidzkamp.com', 'sdkidzkamp.com']
 GOOGLE_ANALYTICS = {
     'google_analytics_id': 'UA-195128106-1',
 }
+GOOGLE_ANALYTICS_MODEL = True
 
 # Application definition
 
@@ -62,9 +63,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = True
 
 ROOT_URLCONF = 'kidzkamp.urls'
 
