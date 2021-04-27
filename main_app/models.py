@@ -2,7 +2,19 @@ from django.db import models
 from django.urls import reverse
 from phone_field import PhoneField
 
-
+WEEKS = (
+    ('1', 'Week 1'),
+    ('2', 'Week 2'),
+    ('3', 'Week 3'),
+    ('4', 'Week 4'),
+    ('5', 'Week 5'),
+    ('6', 'Week 6'),
+    ('7', 'Week 7'),
+    ('8', 'Week 8'),
+    ('9', 'Week 9'),
+    ('10', 'Week 10'),
+    ('11', 'Week 11'),
+)
 
 # Create your models here.
 class Parent(models.Model):
@@ -21,7 +33,11 @@ class Summer(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     child_name = models.CharField(max_length=100)
-    week_number = models.IntegerField()
+    week_number = models.IntegerField(
+        max_length=50,
+        choices = WEEKS,
+        default = WEEKS[0][0]
+        )
     phone = PhoneField(blank=True,E164_only=False)
     email = models.CharField(max_length=100)
 
