@@ -1,7 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from phone_field import PhoneField
-# from multiselectfield import MultiSelectField
+from multiselectfield import MultiSelectField
 import datetime
 WEEKS = (
     ('1', 'Week 1'),
