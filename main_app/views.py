@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 
 from .models import Parent, Summer
 from django.views.generic.edit import CreateView
-# from multiselectfield import MultiSelectField
+from multiselectfield import MultiSelectField
 
 
 # Create your views here.
