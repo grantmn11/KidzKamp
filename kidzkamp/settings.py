@@ -41,7 +41,7 @@ ALLOWED_HOSTS = ['www.sdkidzkamp.com', 'sdkidzkamp.com']
 
 INSTALLED_APPS = [
     # 'google_analytics',
-    'multiselectfield',
+    # 'multiselectfield',
     'phone_field',
     'bootstrap5',
     'crispy_forms',
