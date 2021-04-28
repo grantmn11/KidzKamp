@@ -41,7 +41,7 @@ ALLOWED_HOSTS = ['www.sdkidzkamp.com', 'sdkidzkamp.com']
 
 INSTALLED_APPS = [
     # 'google_analytics',
-    # 'multiselectfield',
+    
     'phone_field',
     'bootstrap5',
     'crispy_forms',
@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [
