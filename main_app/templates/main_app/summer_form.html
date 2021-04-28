@@ -12,7 +12,7 @@
                 <div class="d-flex align-items-center flex-column  ">
                     <img style='width:300px; height: 300px;' src="{% static 'WebsiteNewLogo (1).png' %}" alt="">
                 
-            <form style='padding-left: 1px; padding-right: 2.5px; padding-top: 1px; padding-bottom: 3px; '  action="" method="POST">
+            <form style='padding-left: 1px; padding-right: 2.5px; padding-top: 1px; padding-bottom: 3px; display: flex; align-items: center; flex-direction: column; '  action="" method="POST">
                 {% csrf_token %}
 
                 {{ form.first_name|as_crispy_field }}

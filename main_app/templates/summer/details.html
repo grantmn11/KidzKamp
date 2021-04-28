@@ -9,14 +9,17 @@
     </div>
     <div class="d-flex align-items-center flex-column">
         <img style='width:300px; height: 300px;' src="{% static 'WebsiteNewLogo (1).png' %}" alt="">
+        
     <h4 style='font-family: Roboto Mono, ; font-size: 18px;'>First Name</h4>
     <p style='font-family: Roboto Mono, ; font-size: 13px;'>{{summer.first_name}}</p>
     <h4 style='font-family: Roboto Mono, ; font-size: 18px;'>Last Name</h4>
     <p style='font-family: Roboto Mono, ; font-size: 13px;'>{{summer.last_name}}</p>
     <h4 style='font-family: Roboto Mono, ; font-size: 18px;'>Child Name</h4>
     <p style='font-family: Roboto Mono, ; font-size: 13px;'>{{summer.child_name}}</p>
-    <h4 style='font-family: Roboto Mono, ; font-size: 18px;'>Week Number(1-10)</h4>
-    <p style='font-family: Roboto Mono, ; font-size: 13px;'>{{summer.week_number}}</p>
+    <!-- <h4 style='font-family: Roboto Mono, ; font-size: 18px;'>Week Number</h4>
+    {% for value in form.week_number.field.choices %}
+    <p style='font-family: Roboto Mono, ; font-size: 13px;'>{{week_number.value}}</p>
+    {% endfor %} -->
     <h4 style='font-family: Roboto Mono, ; font-size: 18px;'>Phone Number</h4>
     <p style='font-family: Roboto Mono, ; font-size: 13px;'>{{summer.phone}}</p>
     <h4 style='font-family: Roboto Mono, ; font-size: 18px;'>Email</h4>
