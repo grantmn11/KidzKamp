@@ -32,9 +32,7 @@ BASE_URL = 'https://www.sdkidzkamp.com'
 
 ALLOWED_HOSTS = ['www.sdkidzkamp.com', 'sdkidzkamp.com']
 
-# GOOGLE_ANALYTICS = {
-#     'google_analytics_id': 'UA-195128106-1',
-# }
+
 # GOOGLE_ANALYTICS_MODEL = True
 
 # Application definition
@@ -52,7 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'multiselectfield',
+    # 'multiselectfield',
 ]
 
 MIDDLEWARE = [

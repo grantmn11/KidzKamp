@@ -1,7 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from phone_field import PhoneField
-from multiselectfield import MultiSelectField
+# from multiselectfield import MultiSelectField
 import datetime
 WEEKS = (
     ('1', 'Week 1'),
@@ -34,8 +34,9 @@ class Summer(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     child_name = models.CharField(max_length=100)
-    week_number = MultiSelectField(
-        max_choices=12,
+    week_number = models.CharField(
+        help_text='Pick Starting Week',
+        max_length=12,
         choices = WEEKS,
         default = 1
         )
