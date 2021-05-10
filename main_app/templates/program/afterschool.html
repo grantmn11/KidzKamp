@@ -37,4 +37,50 @@
     </div>
     
 </div>
+
+<div class='container-fluid d-flex justify-content-center'>
+  <a href="{% url 'schoolyear_create'%}" class="btn btn-dark" style='font-family:Chilanka, cursive; font-size: 20px; '>
+    Reserve A 2021 School Year Space
+  </a>
+  <!-- <img  style="height: 250px; border-radius: 3px;" src="{% static 'WebsiteNewAfterschool.png' %}" alt="None"> -->
+
+  <!-- <h2 style='font-family: Chilanka, cursive ; font-size: 18px; font-weight: 900; color: #2c26d8; '>Purchase a Kidz Kamp TShirt</h2>
+  <div id="paypal-button-container"></div>
+  <script src="https://www.paypal.com/sdk/js?client-id=ASH0xTcb6SHagAIQqsAw96qAkXWvBP7FSwDpv3bQhOovUTKLODYO9Vtc4x6CBCMWgeZwN-fC7z0cJrrV&currency=USD&disable-funding=paylater"></script>
+  <script>
+    // Render the PayPal button into #paypal-button-container
+    paypal.Buttons({
+      style: {
+        color:  'blue',
+        shape:  'rect',
+        label:  'pay',
+        height: 30
+      },
+
+        // Set up the transaction
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '88.44'
+                    }
+                }]
+            });
+        },
+
+        // Finalize the transaction
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                // Show a success message to the buyer
+                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            });
+        }
+
+
+    }).render('#paypal-button-container');
+</script> -->
+
+</div>
+
+
 {% endblock %}

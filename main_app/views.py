@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 
-from .models import Parent, Summer
+from .models import Parent, Summer, SchoolYear
 from django.views.generic.edit import CreateView
 # from multiselectfield import MultiSelectField
 
@@ -23,6 +23,15 @@ def afterschool(request):
 
 # def parent(request):
 #     return render(request, 'parent.html')
+def school_year(request):
+    school_year = SchoolYear.objects.all()
+
+    return render(request, 'program/afterschool.html', {'school_year': school_year})
+
+def schoolyear_details(request,school_year_id):
+    school_year = SchoolYear.objects.get(id=school_year_id)
+    return render(request, 'schoolyear/details.html', { 'school_year': school_year})
+
 
 def parent_index(request):
     parents = Parent.objects.all()
@@ -43,6 +52,8 @@ def summer_details(request, summer_id):
     summer = Summer.objects.get(id=summer_id)
     return render(request, 'summer/details.html', {'summer': summer})
 
+
+
 # def parent_details(request, parent_id):
 #     parent = Parent.objects.get(id=parent_id)
 #     parent_form = ParentForm()
@@ -55,3 +66,7 @@ class CreateParent(CreateView):
 class CreateSummer(CreateView):
     model = Summer
     fields = ['first_name', 'last_name', 'child_name', 'week_number', 'email', 'phone']
+
+class CreateSchoolYear(CreateView):
+    model = SchoolYear
+    fields = ['first_name', 'last_name', 'child_name', 'phone', 'email']

@@ -48,4 +48,15 @@ class Summer(models.Model):
     def get_absolute_url(self):
         return reverse('summer_details', kwargs={'summer_id': self.id})
 
+class SchoolYear(models.Model):
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    child_name = models.CharField(max_length=100)
+    phone = PhoneField(blank=True,E164_only=False)
+    email = models.CharField(max_length=100)
+
+    def _str_(self):
+        return self.first_name
+    def get_absolute_url(self):
+        return reverse('schoolyear_details', kwargs={'school_year_id':self.id})
 
