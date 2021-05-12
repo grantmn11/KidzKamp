@@ -55,7 +55,7 @@ class SchoolYear(models.Model):
     phone = PhoneField(blank=True,E164_only=False)
     email = models.CharField(max_length=100)
 
-    def _str_(self):
+    def __str__(self):
         return self.first_name
     def get_absolute_url(self):
         return reverse('schoolyear_details', kwargs={'school_year_id':self.id})
