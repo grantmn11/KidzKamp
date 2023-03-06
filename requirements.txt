@@ -1,4 +1,4 @@
-asgiref==3.3.1
+heroasgiref==3.3.1
 beautifulsoup4==4.9.3
 boto3==1.17.23
 botocore==1.20.23
