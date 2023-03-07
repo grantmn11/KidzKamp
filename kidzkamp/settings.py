@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     # 'google_analytics',
     
     'phone_field',
-    'bootstrap5',
+    'django_bootstrap5',
     'crispy_forms',
     'main_app',
     'django.contrib.admin',
